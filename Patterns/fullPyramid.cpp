@@ -3,21 +3,21 @@ using namespace std;
 
 void fullPyramid(int n)
 {
-    for(int row = 0; row < n; row++)
+    for(int row = 0; row<n; row++)
     {
-        // Print spaces
-        for(int space = 0; space < n - row - 1; space++)
+        for(int col =0; col< n- row-1; col++)
         {
-            cout << " ";
+            cout<<"   ";
         }
-
-        // Print stars
-        for(int star = 0; star <= row ; star++)
+        for(int star = 1; star <= row +1; star++)
         {
-            cout << "* ";
+            cout<<" * ";
         }
-
-        cout << endl;
+        for(int i=0; i<row; i++)
+        {
+            cout<<" * ";
+        }
+        cout<<endl;
     }
 }
 
